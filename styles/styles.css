@@ -1,0 +1,37 @@
+
+.all-btn-bg{
+    background-color: #A6ADBB;
+    color: black;
+}
+.cpu-btn-bg{
+    background-color: #00B29F;
+    color: black;
+}
+.memory-btn-bg{
+    background-color: #646EE4;
+    color: black;
+}
+.mobo-btn-bg{
+    background-color: #EF47BC;
+    color: black;
+}
+.os-btn-bg{
+    background-color: #00B29F;
+    color: black;
+}
+.input-btn-bg{
+    background-color: #00B5FF;
+    color: black;
+}
+.output-btn-bg{
+    background-color: #00A96E;
+    color: black;
+}
+.soft-btn-bg{
+    background-color: #FFBE00;
+    color: black;
+}
+.others-btn-bg{
+    background-color: #FF5861;
+    color: black;
+}

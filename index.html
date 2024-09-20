@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Component</title>
+    <!-- tailwind/daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+     <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <!-- titles and button -->
+    <section class=" w-4/5 mx-auto mt-4">
+        <div><h3 class="text-indigo-500 font-bold text-3xl md:text-5xl text-center">PC COMPONENTS</h3></div>
+        <!-- divider -->
+         <div class="divider"></div>
+        <!-- btn divs -->
+         <div class="grid grid-cols-3 gap-2">
+            <button id="all-btn" class="btn btn-outline ">All</button>
+            <button id="cpu-btn" class="btn btn-outline btn-success ">CPU</button>
+            <button id="memory-btn" class="btn btn-outline btn-primary">Memory</button>
+            <button id="mobo-btn" class="btn btn-outline btn-secondary">Motherboard</button>
+            <button id="os-btn" class="btn btn-outline btn-accent">OS</button>
+            <button id="input-btn" class="btn btn-outline btn-info">Input Device</button>
+            <button id="output-btn" class="btn btn-outline btn-success">Output Device</button>
+            <button id="soft-btn" class="btn btn-outline btn-warning">Softwares</button>
+            <button id="others-btn" class="btn btn-outline btn-error">Others</button>
+         </div>
+         <!-- search bar -->
+         <div class="mt-2">
+            <label class="input input-bordered flex items-center gap-2">
+                <input id="search-bar" type="text" class="grow" placeholder="Search items" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="h-4 w-4 opacity-70">
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                    clip-rule="evenodd" />
+                </svg>
+            </label>
+         </div>
+         <!-- divider -->
+         <div class="divider"></div>
+    </section>
+    <!-- product sec -->
+     <section class="grid md:grid-cols-4 grid-cols-2 w-4/5 mx-auto gap-4">
+        <!-- cpu p1 -->
+        <div class=" card bg-base-100 md:w-60 w-40 shadow-xl border  mx-auto all-items cpu-items">
+            <figure class="p-2">
+              <img src="./images/cpu/amd.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">AMD</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- pic2 -->
+        <div class=" enabled card bg-base-100 md:w-60 w-40 shadow-xl  border mx-auto all-items cpu-items">
+            <figure class="p-2">
+              <img src="./images/cpu/intel.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">INTEL</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- memory p1 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl  border  all-items  mx-auto memory-items">
+            <figure class="p-2">
+              <img src="./images/memory/hdd.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">HDD</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- pic2 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border  memory-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/memory/m.2.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">M.2 NVMe</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p3 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl  border memory-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/memory/ram.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">RAM</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p4 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl  border memory-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/memory/ssd.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">SSD</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- motherbd p1 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border  mobo-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/mobo/asrock.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">ASROCK</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- pic2 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl  border mobo-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/mobo/gigabyte.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">GIGABYTE</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p3 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border  mobo-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/mobo/msi.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">MSI</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- OS p1 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl  border os-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/os/microsoft.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">MICROSOFT</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- pic2 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border  os-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/os/mac.png"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">MAC</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p3 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl  border os-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/os/linux.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">LINUX</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- input p1 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl  border input-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/input/mouse.png"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">MOUSE</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- pic2 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border input-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/input/mic.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">MICROPHONE</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p3 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border input-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/input/newKeyboad.jpeg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">KEYBOARD</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- output p1 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border output-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/output/monitor.png"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">AMD</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">MONITOR</button>
+              </div>
+            </div>
+          </div>
+        <!-- pic2 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border output-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/output/printer.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">PRINTER</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p3 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border output-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/output/projector.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">PROJECTOR</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p4 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border all-items output-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/output/monitor.png"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">MONITOR</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- soft p1 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border soft-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/soft/application.png"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">APPLICATION SOFTWARES</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- pic2 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border all-items soft-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/soft/system.png"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">SYSTEM SOFTWARES</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- others p1 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border others-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/others/casing.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">CASING</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- pic2 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border others-items all-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/others/cooler.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">COOLER</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p3 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border all-items others-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/others/dvd.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">DVD</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p3 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border all-items others-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/others/flash-drive.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">FLASH DRIVE</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p3 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border all-items others-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/others/graphics.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">GRAFICS CARD</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p3 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl border all-items others-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/others/psu.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">PSU</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        <!-- p3 -->
+        <div class="card bg-base-100 md:w-60 w-40 shadow-xl  border all-items others-items mx-auto">
+            <figure class="p-2">
+              <img src="./images/others/ups.jpg"class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center -my-6">
+              <h2 class="card-title text-white">UPS</h2>
+              <div class="card-actions">
+                <button class="btn btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+     </section>
+    <script src="./js/dom.js"></script>
+    <script src="./js/utilities.js"></script>
+</body>
+</html>
