@@ -86,3 +86,22 @@ document.getElementById('others-btn').addEventListener('click', function(event) 
      clearActiveButton();
      this.classList.add('others-btn-bg');
 });
+
+// search bar
+
+const amdTitle = document.getElementById('amd-title').innerText.toLowerCase()
+
+document.getElementById('search-bar').addEventListener('click',function(){
+    const searchText = document.getElementById('search-bar').value;
+    const searchTextLower = searchText.toLowerCase()
+    refresh(allItems);
+    const searchLength = searchTextLower.length;
+    for(let s = 0;s<searchLength;s++){
+        if(searchText === amdTitle){
+            showThisCard('amd-item');
+        }
+    }
+
+
+    
+})

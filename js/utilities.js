@@ -15,3 +15,7 @@ function clearActiveButton() {
       button.classList.remove('all-btn-bg','cpu-btn-bg','memory-btn-bg','mobo-btn-bg','os-btn-bg','soft-btn-bg','input-btn-bg','output-btn-bg','others-btn-bg');
     });
 }
+
+function showThisCard(id){
+    document.getElementById(id).style.display="block";
+}
